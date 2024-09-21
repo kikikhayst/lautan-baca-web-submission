@@ -1,0 +1,358 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/background-body.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+
+/* untuk memberi style pada header keseluruhan */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/DSC_0943.jpg");
+    margin: 0;
+    background-position: center;
+    background-size: 100%;
+}
+
+
+/* untuk memberi style pada menu bagian atas */
+
+#menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    margin: 0;
+    text-align: right;
+}
+
+#menu ul {
+    padding: 0 50px;
+}
+
+#menu li {
+    display: inline;
+    list-style-type: none;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    color: white;
+    background-color: rgba(219, 0, 0);
+    border-radius: 20px;
+}
+
+
+/* img ikut pada list agar sejajar dan satu komponen dengan list */
+
+#menu img {
+    height: 30px;
+    float: left;
+}
+
+
+/* untuk memberi style pada judul pada header yang terdiri dari h1 dan penjelasan singkat dalam p */
+
+header article {
+    text-align: center;
+    padding: 30px;
+}
+
+header article h1 {
+    color: white;
+    font-weight: 900;
+}
+
+header article p {
+    color: white;
+}
+
+
+/* untuk memberi style pada menu kedua dibawah judul. dan akan muncul waktu kita memilih salah satu kategori dari menu pertama
+kecuali menu sosmed, donasi dan home */
+
+#menu2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px 10px;
+    margin: 0;
+    text-align: center;
+}
+
+#menu2 ul {
+    padding: 0 50px;
+}
+
+#menu2 li {
+    display: inline;
+    list-style-type: none;
+}
+
+#menu2 a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+#menu2 a:hover {
+    color: rgb(219, 0, 0);
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+/*Bagian ini untuk memberi style pada main keseluruhan content maupun aside*/
+
+main {
+    margin: 20px 50px;
+    overflow: auto;
+}
+
+
+/* untuk memberikan style pada main yang ber class isi */
+
+.isi {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+
+/* untuk memberikan style pada gambar artikel */
+
+.img-article {
+    object-position: right;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+
+/* seluruh heading 2 akan memiliki style seperti berikut */
+
+.isi h2 {
+    color: rgb(219, 0, 0);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(219, 0, 0);
+    padding-bottom: 5px;
+}
+
+
+/* seluruh heading h3 akan memiliki style seperti dibawah */
+
+h3 {
+    border-bottom: 2px solid rgb(219, 0, 0);
+    padding: 5px;
+}
+
+
+/* memberikan warna pada h3 dan h4 */
+
+h3,
+h4 {
+    color: rgb(219, 0, 0);
+}
+
+
+/* memberikan style heading h3 yang memiliki sub artikel */
+
+.judul-h3 {
+    background-color: rgb(219, 0, 0);
+    color: white;
+    padding-bottom: 10px;
+}
+
+
+/* untuk memberi style heading h3 maupun paragrafnya */
+
+.div-h3 {
+    padding-left: 40px;
+}
+
+
+/* memberi stype pada semua paragraft */
+
+.artikel p {
+    text-align: justify;
+    text-indent: 5%;
+}
+
+
+/* memberikan style pada semua artikel yang memiliki list */
+
+.artikel li {
+    text-align: justify;
+}
+
+
+/* berikut adalah daftar artikel yang dapat dipilih. dan terletak pada aside */
+
+.daftar a {
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.daftar a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(219, 0, 0);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
+/* memberikan style pada aside secara keseluruhan */
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+    text-align: center;
+}
+
+
+/* memberi style pada gambar pada aside */
+
+aside img {
+    height: 100px;
+    border-radius: 100%;
+}
+
+aside p {
+    text-align: left;
+}
+
+
+/* agar content dapat menyempit menjadi 75% dan sisanya diisi oleh aside sebesar 25% */
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#aside-menu {
+    text-align: left;
+}
+
+#aside-menu li {
+    padding: 2px 0;
+}
+
+#aside-menu a {
+    color: rgb(219, 0, 0);
+}
+
+
+/* memberikan style pada footer */
+
+footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/DSC_0943.jpg");
+    padding: 10px;
+    background-size: 100%;
+    background-position: bottom;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer li {
+    display: inline;
+    list-style-type: none;
+    padding: 10px 30px;
+    color: white;
+}
+
+
+/* memberikan style pada form donasi */
+
+.donasi-form {
+    float: left;
+    width: 75%;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field,
+.kirim {
+    width: 100px;
+}
+
+.input-field,
+.input {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    padding: 10px;
+    color: rgb(219, 0, 0);
+    width: 100%;
+}
+
+.input {
+    border-bottom: 2px solid rgb(219, 0, 0);
+}
+
+.pesan textarea {
+    height: 212px;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(219, 0, 0);
+}
+
+::-moz-input-placeholder {
+    color: rgb(219, 0, 0);
+}
+
+.button {
+    background: transparent;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: rgb(219, 0, 0);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: rgb(219, 0, 0);
+    color: white;
+}
+
+.rekening {
+    text-align: center;
+}
+
+
+/*
+penjelasan tambahan:
+
+Untuk element yang tanpa diberi class atau id, akan diterapkan pada semua element yang bersangkutan.
+untuk elemen yang diberi class ataupun id, akan diterapkan style pada semua elem YANG memiliki class atau id yang sama
+*/

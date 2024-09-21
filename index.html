@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selamat Datang</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <!-- ini adalah selector prioritas untuk header judul karena cover memiliki padding lebar.
+    dan hanya dgunakan untuk file html ini saja-->
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/DSC_0943.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        header {
+            height: 89.5vh;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        header article {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        header article h2 {
+            color: white;
+            font-weight: 900;
+            font-size: 40px;
+            padding-top: 30px;
+        }
+        
+        header article p {
+            color: white;
+        }
+        
+        header article nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 20px;
+            font-size: 20px;
+        }
+        
+        header article nav a:hover {
+            color: white;
+            background-color: rgb(219, 0, 0);
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+        
+        #logo {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: fill 0.5s ease forwards 3.5s;
+            width: 600px
+        }
+        
+        #logo path:nth-child(1) {
+            stroke-dasharray: 367;
+            stroke-dashoffset: 367;
+            animation: line-anim 2s ease forwards;
+        }
+        
+        #logo path:nth-child(2) {
+            stroke-dasharray: 218;
+            stroke-dashoffset: 218;
+            animation: line-anim 2s ease forwards 0.3s;
+        }
+        
+        #logo path:nth-child(3) {
+            stroke-dasharray: 155;
+            stroke-dashoffset: 155;
+            animation: line-anim 2s ease forwards 0.6s;
+        }
+        
+        #logo path:nth-child(4) {
+            stroke-dasharray: 218;
+            stroke-dashoffset: 218;
+            animation: line-anim 2s ease forwards 0.9s;
+        }
+        
+        #logo path:nth-child(5) {
+            stroke-dasharray: 155;
+            stroke-dashoffset: 155;
+            animation: line-anim 2s ease forwards 1.2s;
+        }
+        
+        #logo path:nth-child(6) {
+            stroke-dasharray: 389;
+            stroke-dashoffset: 389;
+            animation: line-anim 2s ease forwards 1.5s;
+        }
+        
+        #logo path:nth-child(7) {
+            stroke-dasharray: 218;
+            stroke-dashoffset: 218;
+            animation: line-anim 2s ease forwards 1.8s;
+        }
+        
+        @keyframes line-anim {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="841.89pt" height="595.28pt" viewBox="0 0 841.89 595.28" version="1.1">
+					<path
+						style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:10;"
+						d="M -0.000025 -0.00071875 L -7.281275 33.194594 L -22.6094 33.194594 L -29.894556 -0.00071875 L -37.261744 33.194594 L -51.742212 33.194594 L -37.597681 -14.055406 L -22.019556 -14.055406 L -15.32815 13.889906 L -8.722681 -14.055406 L 6.85935 -14.055406 L 20.999975 33.194594 L 7.367163 33.194594 Z M -0.000025 -0.00071875 " 
+						transform="matrix(1,0,0,-1,270.2969,297.4485)"
+					/>
+					
+					<path
+						style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:10;"
+						d="M 0.000025 -0.00128125 C 4.066431 2.908875 6.773463 6.733094 8.128931 11.475281 L -7.535131 11.475281 C -8.214819 10.627625 -8.7656 10.01825 -9.187475 9.654969 C -9.60935 9.287781 -10.273412 8.920594 -11.179662 8.553406 C -12.082006 8.186219 -13.449194 8.002625 -15.285131 8.002625 C -17.121069 8.002625 -18.8281 8.666688 -20.406225 9.990906 C -21.988256 11.319031 -22.92185 13.026063 -23.2031 15.115906 L 9.316431 15.115906 C 9.539088 16.526063 9.652369 18.0495 9.652369 19.686219 C 9.652369 27.311219 7.367213 33.264344 2.792994 37.557313 C -1.777319 41.846375 -7.535131 43.990906 -14.480444 43.990906 C -21.425756 43.990906 -27.085912 41.819031 -31.460912 37.471375 C -35.835912 33.123719 -38.023412 27.279969 -38.023412 19.940125 C -38.023412 12.604188 -35.820287 6.717469 -31.417944 2.287781 C -27.0156 -2.145812 -21.367162 -4.360656 -14.480444 -4.360656 C -8.8906 -4.360656 -4.062475 -2.907531 0.000025 -0.00128125 Z M -5.417944 24.178406 L -23.117162 24.178406 C -22.722631 26.377625 -21.73435 28.170594 -20.152319 29.553406 C -18.574194 30.936219 -16.624975 31.627625 -14.312475 31.627625 C -11.996069 31.627625 -9.992162 30.936219 -8.300756 29.553406 C -6.605444 28.170594 -5.644506 26.377625 -5.417944 24.178406 Z M -5.417944 24.178406 "
+						transform="matrix(1,0,0,-1,332.4531,307.737)"
+					/>
+					
+					<path
+						style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:10;"
+						d="M 365.902344 346.440156 L 351.421875 346.440156 L 351.421875 283.772188 L 365.902344 283.772188 Z M 365.902344 346.440156 "
+						transform="matrix(1,0,0,-1,0,595.28)"
+					/>
+					
+					<path
+						style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:10;"
+						d="M -0.001925 0.00074375 C 5.646512 0.00074375 10.498075 1.496838 14.564481 4.489025 C 18.630887 7.477306 21.310575 11.516369 22.611356 16.5984 L 6.943387 16.5984 C 6.154325 15.016369 5.248075 13.914806 4.23245 13.293713 C 3.216825 12.672619 1.806669 12.364025 -0.001925 12.364025 C -2.880831 12.364025 -5.068331 13.449963 -6.564425 15.625744 C -8.060519 17.797619 -8.806613 20.664806 -8.806613 24.219494 C -8.806613 27.774181 -8.060519 30.641369 -6.564425 32.813244 C -5.068331 34.985119 -2.779269 36.074963 0.29495 36.074963 C 3.373075 36.074963 5.587919 34.664806 6.943387 31.840588 L 22.611356 31.840588 C 21.310575 37.145275 18.658231 41.227306 14.650419 44.078869 C 10.642606 46.926525 5.759794 48.352306 -0.001925 48.352306 C -6.943331 48.352306 -12.603488 46.164806 -16.978488 41.789806 C -21.353488 37.414806 -23.540988 31.555431 -23.540988 24.219494 C -23.540988 16.87965 -21.353488 11.008556 -16.978488 6.606213 C -12.603488 2.203869 -6.943331 0.00074375 -0.001925 0.00074375 Z M -0.001925 0.00074375 "
+						transform="matrix(1,0,0,-1,398.6738,312.0984)"
+					/>
+					
+					<path
+						style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:10;"
+						d="M -0.0014625 0.000225 C -2.708494 0.000225 -5.067869 1.01585 -7.071775 3.0471 C -9.075681 5.082256 -10.075681 8.01585 -10.075681 11.855694 C -10.075681 15.695538 -9.103025 18.613506 -7.153806 20.621319 C -5.208494 22.621319 -2.880369 23.625225 -0.169431 23.625225 C 2.541506 23.625225 4.88135 22.621319 6.857912 20.621319 C 8.834475 18.613506 9.822756 15.695538 9.822756 11.855694 C 9.822756 8.01585 8.861819 5.082256 6.94385 3.0471 C 5.025881 1.01585 2.709475 0.000225 -0.0014625 0.000225 Z M -0.0014625 -12.363056 C 6.998537 -12.363056 12.842287 -10.132587 17.529787 -5.675556 C 22.213381 -1.214619 24.557131 4.656475 24.557131 11.941631 C 24.557131 19.222881 22.201662 25.051006 17.486819 29.426006 C 12.771975 33.801006 6.916506 35.988506 -0.0834938 35.988506 C -7.0874 35.988506 -12.958494 33.801006 -17.700681 29.426006 C -22.442869 25.051006 -24.810056 19.222881 -24.810056 11.941631 C -24.810056 4.656475 -22.427244 -1.214619 -17.657713 -5.675556 C -12.884275 -10.132587 -7.001463 -12.363056 -0.0014625 -12.363056 Z M -0.0014625 -12.363056 "
+						transform="matrix(1,0,0,-1,450.8374,299.7346)"
+					/>
+					
+					<path
+						style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:10;"
+						d="M 0.0005375 -0.00120625 L 0.0005375 -47.251206 L 14.481006 -47.251206 L 14.481006 -21.594956 C 14.481006 -18.544175 15.285694 -16.188706 16.895069 -14.524644 C 18.504444 -12.860581 20.719288 -12.024644 23.5396 -12.024644 C 26.363819 -12.024644 28.578663 -12.860581 30.188038 -14.524644 C 31.797413 -16.188706 32.6021 -18.544175 32.6021 -21.594956 L 32.6021 -47.251206 L 46.996631 -47.251206 L 46.996631 -21.594956 C 46.996631 -18.544175 47.801319 -16.188706 49.410694 -14.524644 C 51.020069 -12.860581 53.234913 -12.024644 56.059131 -12.024644 C 58.88335 -12.024644 61.098194 -12.860581 62.707569 -14.524644 C 64.316944 -16.188706 65.121631 -18.544175 65.121631 -21.594956 L 65.121631 -47.251206 L 79.516163 -47.251206 L 79.516163 -19.645737 C 79.516163 -13.325425 77.82085 -8.384019 74.434131 -4.825425 C 71.047413 -1.270737 66.4771 0.506606 60.715381 0.506606 C 57.270069 0.506606 54.152881 -0.325425 51.359913 -1.989487 C 48.563038 -3.657456 46.293506 -5.8723 44.543506 -8.637925 C 43.020069 -5.704331 40.887256 -3.442612 38.148975 -1.864487 C 35.410694 -0.282456 32.2896 0.506606 28.793506 0.506606 C 22.242725 0.506606 17.473194 -1.977769 14.481006 -6.942612 L 14.481006 -0.00120625 Z M 0.0005375 -0.00120625 "
+						transform="matrix(1,0,0,-1,484.7104,264.2527)"
+					/>
+					
+					<path
+						style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:10;"
+						d="M -0.0015125 -0.00128125 C 4.064894 2.908875 6.775831 6.733094 8.1313 11.475281 L -7.536669 11.475281 C -8.21245 10.627625 -8.763231 10.01825 -9.189012 9.654969 C -9.610887 9.287781 -10.27495 8.920594 -11.177294 8.553406 C -12.083544 8.186219 -13.450731 8.002625 -15.286669 8.002625 C -17.1187 8.002625 -18.829637 8.666688 -20.407762 9.990906 C -21.989794 11.319031 -22.919481 13.026063 -23.204637 15.115906 L 9.314894 15.115906 C 9.541456 16.526063 9.654738 18.0495 9.654738 19.686219 C 9.654738 27.311219 7.365675 33.264344 2.795363 37.557313 C -1.778856 41.846375 -7.536669 43.990906 -14.478075 43.990906 C -21.423387 43.990906 -27.083544 41.819031 -31.458544 37.471375 C -35.833544 33.123719 -38.021044 27.279969 -38.021044 19.940125 C -38.021044 12.604188 -35.821825 6.717469 -31.415575 2.287781 C -27.013231 -2.145812 -21.3687 -4.360656 -14.478075 -4.360656 C -8.892137 -4.360656 -4.064012 -2.907531 -0.0015125 -0.00128125 Z M -5.419481 24.178406 L -23.1187 24.178406 C -22.724169 26.377625 -21.735887 28.170594 -20.153856 29.553406 C -18.575731 30.936219 -16.626512 31.627625 -14.310106 31.627625 C -11.997606 31.627625 -9.9937 30.936219 -8.298387 29.553406 C -6.603075 28.170594 -5.646044 26.377625 -5.419481 24.178406 Z M -5.419481 24.178406 "
+						transform="matrix(1,0,0,-1,611.0562,307.737)"
+					/>
+				</svg>
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><img src="assets/images/LOGO KIKIKHAYST PRODUCTION A.png" alt="KIKIKHAYST"></li>
+                <li><a href="assets/index/index-donasi-menu.html">Donasi Sekarang</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>LAUTAN BACA</h2>
+            <p>
+                Tempatnya Belajar <strong>Edukasi</strong> Tentang Dunia Laut yang Mempesona
+            </p>
+            <nav>
+                <a href="assets/index/index-menu.html">Baca</a>
+            </nav>
+        </article>
+    </header>
+
+    <footer>
+        <ul>
+            <li>Hak Cipta Dilindungi Pribadi</li>
+            <li>Instagram: <a href="https://www.instagram.com/g/kikikhayst">@kikikhayst</a></li>
+            <li>Twitter: <a href="https://www.twitter.com/bodoahhpusing">@bodoahhpusing</a></li>
+            <li>Youtube: <a href="https://www.youtube.com/channel/UCBEAU7OAHW_J294waS4tdGw">Rizqi Rama Hayustya</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
